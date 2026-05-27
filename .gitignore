@@ -13,4 +13,4 @@ data/processed/*
 !data/processed/.gitkeep
 *.log
 .DS_Store
-
+*.egg-info/
