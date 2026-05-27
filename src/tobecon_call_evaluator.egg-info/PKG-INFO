@@ -1,3 +1,13 @@
+Metadata-Version: 2.4
+Name: tobecon-call-evaluator
+Version: 0.1.0
+Summary: Tool-use based Korean CS call evaluator
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: openai>=1.50.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+
 # TOBECON Call Evaluator
 
 한국어 CS 통화 MP3를 입력받아 전사 → tool-use 기반 분석 → JSON/Markdown 리포트를 생성하는 과제용 프로젝트입니다.

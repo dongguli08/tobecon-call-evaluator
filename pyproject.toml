@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tobecon-call-evaluator"
+version = "0.1.0"
+description = "Tool-use based Korean CS call evaluator"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.50.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+]
+
+[project.scripts]
+tobecon-evaluator = "tobecon_evaluator.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -1,0 +1,2 @@
+[console_scripts]
+tobecon-evaluator = tobecon_evaluator.cli:main
